@@ -5,6 +5,9 @@
       location = "group:LICENSE">
    </FileRef>
    <FileRef
-      location = "group:SwiftyTouch/SwiftyTouch.xcodeproj">
+      location = "group:SwiftyTouch.podspec">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftyTouch.xcodeproj">
    </FileRef>
 </Workspace>

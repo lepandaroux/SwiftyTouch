@@ -10,6 +10,7 @@
 		2544038B20BDAD05005C1EB2 /* SwiftyTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544038120BDAD05005C1EB2 /* SwiftyTouch.framework */; };
 		2544039020BDAD05005C1EB2 /* SwiftyTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */; };
 		2544039220BDAD05005C1EB2 /* SwiftyTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2544038420BDAD05005C1EB2 /* SwiftyTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2544039C20BDB426005C1EB2 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544039B20BDB426005C1EB2 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2544038A20BDAD05005C1EB2 /* SwiftyTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTouchTests.swift; sourceTree = "<group>"; };
 		2544039120BDAD05005C1EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2544039B20BDB426005C1EB2 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				2544038520BDAD05005C1EB2 /* Info.plist */,
 				2544038420BDAD05005C1EB2 /* SwiftyTouch.h */,
+				2544039B20BDB426005C1EB2 /* Collection.swift */,
 			);
 			path = SwiftyTouch;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					2544038020BDAD05005C1EB2 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					2544038920BDAD05005C1EB2 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2544039C20BDB426005C1EB2 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		2544039620BDAD05005C1EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,7 +361,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.lepandaroux.SwiftyTouch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -363,6 +370,7 @@
 		2544039720BDAD05005C1EB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -379,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.lepandaroux.SwiftyTouch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -387,6 +395,7 @@
 		2544039920BDAD05005C1EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyTouchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		2544039A20BDAD05005C1EB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyTouchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
