@@ -11,6 +11,8 @@
 		2544039020BDAD05005C1EB2 /* SwiftyTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */; };
 		2544039220BDAD05005C1EB2 /* SwiftyTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2544038420BDAD05005C1EB2 /* SwiftyTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2544039C20BDB426005C1EB2 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544039B20BDB426005C1EB2 /* Collection.swift */; };
+		2544039F20BDB8F2005C1EB2 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544039E20BDB8F2005C1EB2 /* Weak.swift */; };
+		254403A120BDB901005C1EB2 /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254403A020BDB901005C1EB2 /* RawRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTouchTests.swift; sourceTree = "<group>"; };
 		2544039120BDAD05005C1EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2544039B20BDB426005C1EB2 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		2544039E20BDB8F2005C1EB2 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		254403A020BDB901005C1EB2 /* RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,9 @@
 		2544038320BDAD05005C1EB2 /* SwiftyTouch */ = {
 			isa = PBXGroup;
 			children = (
-				2544038520BDAD05005C1EB2 /* Info.plist */,
 				2544038420BDAD05005C1EB2 /* SwiftyTouch.h */,
-				2544039B20BDB426005C1EB2 /* Collection.swift */,
+				2544038520BDAD05005C1EB2 /* Info.plist */,
+				2544039D20BDB889005C1EB2 /* Swift */,
 			);
 			path = SwiftyTouch;
 			sourceTree = "<group>";
@@ -87,6 +91,16 @@
 				2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */,
 			);
 			path = SwiftyTouchTests;
+			sourceTree = "<group>";
+		};
+		2544039D20BDB889005C1EB2 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2544039B20BDB426005C1EB2 /* Collection.swift */,
+				254403A020BDB901005C1EB2 /* RawRepresentable.swift */,
+				2544039E20BDB8F2005C1EB2 /* Weak.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254403A120BDB901005C1EB2 /* RawRepresentable.swift in Sources */,
 				2544039C20BDB426005C1EB2 /* Collection.swift in Sources */,
+				2544039F20BDB8F2005C1EB2 /* Weak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
