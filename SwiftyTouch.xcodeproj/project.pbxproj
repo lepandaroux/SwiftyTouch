@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2544038B20BDAD05005C1EB2 /* SwiftyTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544038120BDAD05005C1EB2 /* SwiftyTouch.framework */; };
-		2544039020BDAD05005C1EB2 /* SwiftyTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */; };
 		2544039220BDAD05005C1EB2 /* SwiftyTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2544038420BDAD05005C1EB2 /* SwiftyTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2544039C20BDB426005C1EB2 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544039B20BDB426005C1EB2 /* Collection.swift */; };
 		2544039F20BDB8F2005C1EB2 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544039E20BDB8F2005C1EB2 /* Weak.swift */; };
 		254403A120BDB901005C1EB2 /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254403A020BDB901005C1EB2 /* RawRepresentable.swift */; };
 		259272E920C01176004C8CDD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259272E820C01176004C8CDD /* String.swift */; };
+		259272EC20C0120C004C8CDD /* ReusableView+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259272EB20C0120C004C8CDD /* ReusableView+Registration.swift */; };
+		259272F320C012DC004C8CDD /* RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259272F220C012DC004C8CDD /* RegistrationTests.swift */; };
+		259272FA20C0137E004C8CDD /* RegistrationTableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259272F520C0137E004C8CDD /* RegistrationTableViewHeaderFooterView.xib */; };
+		259272FB20C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259272F620C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib */; };
+		259272FC20C0137E004C8CDD /* RegistrationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259272F720C0137E004C8CDD /* RegistrationViews.swift */; };
+		259272FD20C0137E004C8CDD /* RegistrationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259272F820C0137E004C8CDD /* RegistrationTableViewCell.xib */; };
+		259272FE20C0137E004C8CDD /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259272F920C0137E004C8CDD /* RegistrationCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +37,18 @@
 		2544038420BDAD05005C1EB2 /* SwiftyTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyTouch.h; sourceTree = "<group>"; };
 		2544038520BDAD05005C1EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2544038A20BDAD05005C1EB2 /* SwiftyTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTouchTests.swift; sourceTree = "<group>"; };
 		2544039120BDAD05005C1EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2544039B20BDB426005C1EB2 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		2544039E20BDB8F2005C1EB2 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		254403A020BDB901005C1EB2 /* RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawRepresentable.swift; sourceTree = "<group>"; };
 		259272E820C01176004C8CDD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		259272EB20C0120C004C8CDD /* ReusableView+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReusableView+Registration.swift"; sourceTree = "<group>"; };
+		259272F220C012DC004C8CDD /* RegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTests.swift; sourceTree = "<group>"; };
+		259272F520C0137E004C8CDD /* RegistrationTableViewHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationTableViewHeaderFooterView.xib; sourceTree = "<group>"; };
+		259272F620C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationCollectionViewReusableView.xib; sourceTree = "<group>"; };
+		259272F720C0137E004C8CDD /* RegistrationViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViews.swift; sourceTree = "<group>"; };
+		259272F820C0137E004C8CDD /* RegistrationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationTableViewCell.xib; sourceTree = "<group>"; };
+		259272F920C0137E004C8CDD /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +94,7 @@
 				2544038420BDAD05005C1EB2 /* SwiftyTouch.h */,
 				2544038520BDAD05005C1EB2 /* Info.plist */,
 				2544039D20BDB889005C1EB2 /* Swift */,
-				259272E520C01031004C8CDD /* CocoaTouch */,
+				259272E520C01031004C8CDD /* Cocoa Touch */,
 			);
 			path = SwiftyTouch;
 			sourceTree = "<group>";
@@ -91,7 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				2544039120BDAD05005C1EB2 /* Info.plist */,
-				2544038F20BDAD05005C1EB2 /* SwiftyTouchTests.swift */,
+				259272ED20C01280004C8CDD /* Swift */,
+				259272EE20C01290004C8CDD /* Cocoa Touch */,
 			);
 			path = SwiftyTouchTests;
 			sourceTree = "<group>";
@@ -106,13 +119,13 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
-		259272E520C01031004C8CDD /* CocoaTouch */ = {
+		259272E520C01031004C8CDD /* Cocoa Touch */ = {
 			isa = PBXGroup;
 			children = (
 				259272E620C0114E004C8CDD /* Foundation */,
 				259272E720C01156004C8CDD /* UIKit */,
 			);
-			path = CocoaTouch;
+			path = "Cocoa Touch";
 			sourceTree = "<group>";
 		};
 		259272E620C0114E004C8CDD /* Foundation */ = {
@@ -126,8 +139,69 @@
 		259272E720C01156004C8CDD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				259272EA20C011E8004C8CDD /* Reusable Views */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		259272EA20C011E8004C8CDD /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				259272EB20C0120C004C8CDD /* ReusableView+Registration.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		259272ED20C01280004C8CDD /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		259272EE20C01290004C8CDD /* Cocoa Touch */ = {
+			isa = PBXGroup;
+			children = (
+				259272F020C012A5004C8CDD /* Foundation */,
+				259272EF20C0129F004C8CDD /* UIKit */,
+			);
+			path = "Cocoa Touch";
+			sourceTree = "<group>";
+		};
+		259272EF20C0129F004C8CDD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				259272F120C012AF004C8CDD /* Reusable Views */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		259272F020C012A5004C8CDD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		259272F120C012AF004C8CDD /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				259272F220C012DC004C8CDD /* RegistrationTests.swift */,
+				259272F420C012F9004C8CDD /* RegistrationDataSet */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		259272F420C012F9004C8CDD /* RegistrationDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				259272F920C0137E004C8CDD /* RegistrationCollectionViewCell.xib */,
+				259272F620C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib */,
+				259272F820C0137E004C8CDD /* RegistrationTableViewCell.xib */,
+				259272F520C0137E004C8CDD /* RegistrationTableViewHeaderFooterView.xib */,
+				259272F720C0137E004C8CDD /* RegistrationViews.swift */,
+			);
+			path = RegistrationDataSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259272FD20C0137E004C8CDD /* RegistrationTableViewCell.xib in Resources */,
+				259272FA20C0137E004C8CDD /* RegistrationTableViewHeaderFooterView.xib in Resources */,
+				259272FB20C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib in Resources */,
+				259272FE20C0137E004C8CDD /* RegistrationCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +320,7 @@
 				254403A120BDB901005C1EB2 /* RawRepresentable.swift in Sources */,
 				2544039C20BDB426005C1EB2 /* Collection.swift in Sources */,
 				259272E920C01176004C8CDD /* String.swift in Sources */,
+				259272EC20C0120C004C8CDD /* ReusableView+Registration.swift in Sources */,
 				2544039F20BDB8F2005C1EB2 /* Weak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2544039020BDAD05005C1EB2 /* SwiftyTouchTests.swift in Sources */,
+				259272F320C012DC004C8CDD /* RegistrationTests.swift in Sources */,
+				259272FC20C0137E004C8CDD /* RegistrationViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
