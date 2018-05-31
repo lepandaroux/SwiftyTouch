@@ -20,6 +20,7 @@
 		259272FC20C0137E004C8CDD /* RegistrationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259272F720C0137E004C8CDD /* RegistrationViews.swift */; };
 		259272FD20C0137E004C8CDD /* RegistrationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259272F820C0137E004C8CDD /* RegistrationTableViewCell.xib */; };
 		259272FE20C0137E004C8CDD /* RegistrationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259272F920C0137E004C8CDD /* RegistrationCollectionViewCell.xib */; };
+		2592730020C018E5004C8CDD /* ReusableView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259272FF20C018E5004C8CDD /* ReusableView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		259272F720C0137E004C8CDD /* RegistrationViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViews.swift; sourceTree = "<group>"; };
 		259272F820C0137E004C8CDD /* RegistrationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationTableViewCell.xib; sourceTree = "<group>"; };
 		259272F920C0137E004C8CDD /* RegistrationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationCollectionViewCell.xib; sourceTree = "<group>"; };
+		259272FF20C018E5004C8CDD /* ReusableView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReusableView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				259272EB20C0120C004C8CDD /* ReusableView+Registration.swift */,
+				259272FF20C018E5004C8CDD /* ReusableView+Layout.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				259272E920C01176004C8CDD /* String.swift in Sources */,
 				259272EC20C0120C004C8CDD /* ReusableView+Registration.swift in Sources */,
 				2544039F20BDB8F2005C1EB2 /* Weak.swift in Sources */,
+				2592730020C018E5004C8CDD /* ReusableView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
