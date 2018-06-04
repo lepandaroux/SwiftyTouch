@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FirstValidCustomView" customModule="XDKitTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d52-EI-LIA">
+                    <rect key="frame" x="77" y="85" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38P-ls-o3v">
+                    <rect key="frame" x="74.5" y="0.0" width="51.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="d52-EI-LIA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2xJ-JQ-tKa"/>
+                <constraint firstItem="d52-EI-LIA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MS4-jR-cLy"/>
+                <constraint firstItem="38P-ls-o3v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XWp-g9-04u"/>
+                <constraint firstItem="38P-ls-o3v" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZUn-R5-ooF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="indexLabel" destination="38P-ls-o3v" id="Rah-Dt-BWf"/>
+                <outlet property="outlet" destination="d52-EI-LIA" id="zb3-Bq-ZTs"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="60"/>
+        </view>
+        <view contentMode="scaleToFill" id="pDA-Pg-vUg" customClass="IndexedValidCustomView" customModule="XDKitTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-Co-3la">
+                    <rect key="frame" x="77" y="85" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xU-cb-PGU">
+                    <rect key="frame" x="75.5" y="0.0" width="49" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4xU-cb-PGU" firstAttribute="centerX" secondItem="pDA-Pg-vUg" secondAttribute="centerX" id="20g-Bl-CjZ"/>
+                <constraint firstItem="4xU-cb-PGU" firstAttribute="top" secondItem="8lV-in-qrI" secondAttribute="top" id="5z8-as-Rda"/>
+                <constraint firstItem="JBY-Co-3la" firstAttribute="centerX" secondItem="pDA-Pg-vUg" secondAttribute="centerX" id="Iv0-pm-gX5"/>
+                <constraint firstItem="JBY-Co-3la" firstAttribute="centerY" secondItem="pDA-Pg-vUg" secondAttribute="centerY" id="gs4-gD-abk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8lV-in-qrI"/>
+            <connections>
+                <outlet property="indexLabel" destination="4xU-cb-PGU" id="HhY-hm-tSY"/>
+                <outlet property="outlet" destination="JBY-Co-3la" id="3aD-1a-jIf"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="60"/>
+        </view>
+        <view contentMode="scaleToFill" id="YKQ-FP-LyR" customClass="NotIndexedValidCustomView" customModule="XDKitTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpO-ya-aZu">
+                    <rect key="frame" x="77" y="85" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fd-vg-Ec7">
+                    <rect key="frame" x="74.5" y="0.0" width="51.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bpO-ya-aZu" firstAttribute="centerX" secondItem="YKQ-FP-LyR" secondAttribute="centerX" id="Ped-Ch-QHf"/>
+                <constraint firstItem="6Fd-vg-Ec7" firstAttribute="top" secondItem="eJ1-9q-E0K" secondAttribute="top" id="egV-Pk-IUP"/>
+                <constraint firstItem="bpO-ya-aZu" firstAttribute="centerY" secondItem="YKQ-FP-LyR" secondAttribute="centerY" id="wQ9-iw-CkE"/>
+                <constraint firstItem="6Fd-vg-Ec7" firstAttribute="centerX" secondItem="YKQ-FP-LyR" secondAttribute="centerX" id="yC2-Lu-1Ap"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="eJ1-9q-E0K"/>
+            <connections>
+                <outlet property="indexLabel" destination="6Fd-vg-Ec7" id="bh0-3Y-MXE"/>
+                <outlet property="outlet" destination="bpO-ya-aZu" id="u80-Fi-XDk"/>
+            </connections>
+            <point key="canvasLocation" x="645" y="60"/>
+        </view>
+    </objects>
+</document>
