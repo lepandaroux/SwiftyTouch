@@ -36,9 +36,9 @@ private extension ReusableViewComputationCompatible where Self: UICollectionView
         computationCells[ObjectIdentifier(self)] = nil
     }
     
-    static func boundCell(withSetup setup: (Self) -> Void) -> Self {
+    static func preparedCell(withConfiguration configuration: (Self) -> Void) -> Self {
         let cell = computationCell()
-        setup(cell)
+        configuration(cell)
         cell.setNeedsLayout()
         // `layoutIfNeeded` may raise constraints violation logs at this point if cell is not large enough for its content but it won't impact `systemLayoutSizeFitting` according to priorities passed to it as parameters.
         cell.layoutIfNeeded()
@@ -53,8 +53,8 @@ public extension ReusableViewComputationCompatible where Self: UICollectionViewC
     }
     
     static func size(forWidth width: CGFloat,
-                     withSetup setup: (Self) -> Void) -> CGSize {
-        let size = boundCell(withSetup: setup).contentView
+                     withConfiguration configuration: (Self) -> Void) -> CGSize {
+        let size = preparedCell(withConfiguration: configuration).contentView
             .systemLayoutSizeFitting(CGSize(width: width,
                                             height: UILayoutFittingCompressedSize.height),
                                      withHorizontalFittingPriority: UILayoutPriority.required,
@@ -63,8 +63,8 @@ public extension ReusableViewComputationCompatible where Self: UICollectionViewC
     }
     
     static func size(forHeight height: CGFloat,
-                     withSetup setup: (Self) -> Void) -> CGSize {
-        let size = boundCell(withSetup: setup).contentView
+                     withConfiguration configuration: (Self) -> Void) -> CGSize {
+        let size = preparedCell(withConfiguration: configuration).contentView
             .systemLayoutSizeFitting(CGSize(width: UILayoutFittingCompressedSize.width,
                                             height: height),
                                      withHorizontalFittingPriority: UILayoutPriority.fittingSizeLevel,

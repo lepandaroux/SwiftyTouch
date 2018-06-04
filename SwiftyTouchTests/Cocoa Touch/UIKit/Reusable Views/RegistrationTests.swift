@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SwiftyTouch
+@testable import SwiftyTouch
 
 private let swiftyTouchTestsBundle = Bundle(for: TableViewRegistrationTests.self)
 private let registrationTableViewCellNibName                = "RegistrationTableViewCell"
