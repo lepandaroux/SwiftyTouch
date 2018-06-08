@@ -19,21 +19,21 @@ public extension UIViewController {
     
     func addSubviewController(_ viewController: UIViewController,
                               scaledToFill containerView: UIView,
-                              constainToLayoutGuides: Bool = true) {
+                              constrainToLayoutGuides: Bool = true) {
         addChildViewController(viewController)
         containerView.addSubview(scaledToFill: viewController.view,
-                                 constainToLayoutGuides: constainToLayoutGuides)
+                                 constrainToLayoutGuides: constrainToLayoutGuides)
         viewController.didMove(toParentViewController: self)
     }
     
     func addSubviewController(_ viewController: UIViewController,
                               in containerView: UIView,
                               inset: UIEdgeInsets,
-                              constainToLayoutGuides: Bool = true) {
+                              constrainToLayoutGuides: Bool = true) {
         addChildViewController(viewController)
         containerView.addSubview(viewController.view,
                                  inset: inset,
-                                 constainToLayoutGuides: constainToLayoutGuides)
+                                 constrainToLayoutGuides: constrainToLayoutGuides)
         viewController.didMove(toParentViewController: self)
     }
     

@@ -59,6 +59,9 @@
 		2595885220C55B21001ED4D0 /* StoryboardConvertibleNoInitialStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2595884F20C55B21001ED4D0 /* StoryboardConvertibleNoInitialStoryboard.storyboard */; };
 		2595885420C55C47001ED4D0 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885320C55C47001ED4D0 /* UIView+Layout.swift */; };
 		2595885620C55CDB001ED4D0 /* UIViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885520C55CDB001ED4D0 /* UIViewController+Layout.swift */; };
+		2595885820C573CB001ED4D0 /* UIView+LayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885720C573CB001ED4D0 /* UIView+LayoutTests.swift */; };
+		2595885B20C574DC001ED4D0 /* UIViewLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595885A20C574DC001ED4D0 /* UIViewLayoutView.xib */; };
+		2595885D20C5775D001ED4D0 /* UIViewLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885C20C5775D001ED4D0 /* UIViewLayoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,9 @@
 		2595884F20C55B21001ED4D0 /* StoryboardConvertibleNoInitialStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardConvertibleNoInitialStoryboard.storyboard; sourceTree = "<group>"; };
 		2595885320C55C47001ED4D0 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		2595885520C55CDB001ED4D0 /* UIViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
+		2595885720C573CB001ED4D0 /* UIView+LayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutTests.swift"; sourceTree = "<group>"; };
+		2595885A20C574DC001ED4D0 /* UIViewLayoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIViewLayoutView.xib; sourceTree = "<group>"; };
+		2595885C20C5775D001ED4D0 /* UIViewLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,8 @@
 		259272EF20C0129F004C8CDD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				2595885720C573CB001ED4D0 /* UIView+LayoutTests.swift */,
+				2595885920C574B1001ED4D0 /* UIView+Layout DataSet */,
 				259272F120C012AF004C8CDD /* Reusable Views */,
 				2595882720C55A21001ED4D0 /* Nib Convertible */,
 				2595882820C55A2A001ED4D0 /* Storyboard Convertible */,
@@ -369,6 +377,15 @@
 			path = DataSet;
 			sourceTree = "<group>";
 		};
+		2595885920C574B1001ED4D0 /* UIView+Layout DataSet */ = {
+			isa = PBXGroup;
+			children = (
+				2595885C20C5775D001ED4D0 /* UIViewLayoutViewController.swift */,
+				2595885A20C574DC001ED4D0 /* UIViewLayoutView.xib */,
+			);
+			path = "UIView+Layout DataSet";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -479,6 +496,7 @@
 				259272FB20C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib in Resources */,
 				2595883E20C55B00001ED4D0 /* NibConvertibleViewControllersStoryboard.storyboard in Resources */,
 				2595883F20C55B00001ED4D0 /* NibConvertibleIBNestableView.xib in Resources */,
+				2595885B20C574DC001ED4D0 /* UIViewLayoutView.xib in Resources */,
 				2595884020C55B00001ED4D0 /* NibConvertibleCustomViews.xib in Resources */,
 				259272FE20C0137E004C8CDD /* RegistrationCollectionViewCell.xib in Resources */,
 				2595884920C55B00001ED4D0 /* NibConvertibleOwnerView.xib in Resources */,
@@ -531,10 +549,12 @@
 				2595885120C55B21001ED4D0 /* StoryboardConvertibleViewControllers.swift in Sources */,
 				2595884A20C55B00001ED4D0 /* NibConvertibleIBNestableViewController.swift in Sources */,
 				259272FC20C0137E004C8CDD /* RegistrationViews.swift in Sources */,
+				2595885D20C5775D001ED4D0 /* UIViewLayoutViewController.swift in Sources */,
 				2595884620C55B00001ED4D0 /* NibConvertibleCustomViewController.swift in Sources */,
 				2595884820C55B00001ED4D0 /* NibConvertibleCustomViews.swift in Sources */,
 				2595884420C55B00001ED4D0 /* NibConvertibleIBNestableView.swift in Sources */,
 				2595884C20C55B00001ED4D0 /* NibConvertibleReusableViews.swift in Sources */,
+				2595885820C573CB001ED4D0 /* UIView+LayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,26 +19,43 @@ public extension UIView {
     }
     
     func addSubview(scaledToFill view: UIView,
-                    constainToLayoutGuides: Bool = true) {
+                    constrainToLayoutGuides: Bool = true) {
         addSubview(view, inset: UIEdgeInsets.zero,
-                   constainToLayoutGuides: constainToLayoutGuides)
+                   constrainToLayoutGuides: constrainToLayoutGuides)
     }
     
     func addSubview(_ view: UIView,
                     inset: UIEdgeInsets,
-                    constainToLayoutGuides: Bool = true) {
+                    constrainToLayoutGuides: Bool = true) {
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
-        let selfVC = parentViewController
-        let selfTopAnchor = (self == selfVC?.view && constainToLayoutGuides ?
-            selfVC!.topLayoutGuide.bottomAnchor : topAnchor)
-        let selfBottomAnchor = (self == selfVC?.view && constainToLayoutGuides ?
-            selfVC!.bottomLayoutGuide.topAnchor : bottomAnchor)
+        
+        let selfTopAnchor: NSLayoutYAxisAnchor
+        let selfLeadingAnchor: NSLayoutXAxisAnchor
+        let selfBottomAnchor: NSLayoutYAxisAnchor
+        let selfTrailingAnchor: NSLayoutXAxisAnchor
+        if constrainToLayoutGuides, #available(iOS 11, *) {
+            selfTopAnchor = safeAreaLayoutGuide.topAnchor
+            selfLeadingAnchor = safeAreaLayoutGuide.leadingAnchor
+            selfBottomAnchor = safeAreaLayoutGuide.bottomAnchor
+            selfTrailingAnchor = safeAreaLayoutGuide.trailingAnchor
+        } else if constrainToLayoutGuides, let selfVC = parentViewController, self == selfVC.view {
+            selfTopAnchor = selfVC.topLayoutGuide.bottomAnchor
+            selfLeadingAnchor = leadingAnchor
+            selfBottomAnchor = selfVC.bottomLayoutGuide.topAnchor
+            selfTrailingAnchor = trailingAnchor
+        } else {
+            selfTopAnchor = topAnchor
+            selfLeadingAnchor = leadingAnchor
+            selfBottomAnchor = bottomAnchor
+            selfTrailingAnchor = trailingAnchor
+        }
+        
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: selfTopAnchor, constant: inset.top), // top
-            view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: inset.left), // left
+            view.leadingAnchor.constraint(equalTo: selfLeadingAnchor, constant: inset.left), // leading
             selfBottomAnchor.constraint(equalTo: view.bottomAnchor, constant: inset.bottom), // bottom
-            trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: inset.right) // right
+            selfTrailingAnchor.constraint(equalTo: view.trailingAnchor, constant: inset.right) // trailing
             ])
     }
 }
