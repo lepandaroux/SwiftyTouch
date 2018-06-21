@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name                  = 'SwiftyTouch'
-    s.version               = '0.2'
+    s.version               = '0.3'
     s.summary	            = 'Swift Kit for Cocoa Touch'
     s.description           = <<-DESC
 Kit of various tools dedicated to iOS development.
