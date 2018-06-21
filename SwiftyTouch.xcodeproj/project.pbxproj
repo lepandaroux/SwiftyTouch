@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2542305E20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542305D20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift */; };
+		2542306020DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542305F20DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift */; };
 		2544038B20BDAD05005C1EB2 /* SwiftyTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544038120BDAD05005C1EB2 /* SwiftyTouch.framework */; };
 		2544039220BDAD05005C1EB2 /* SwiftyTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2544038420BDAD05005C1EB2 /* SwiftyTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2544039C20BDB426005C1EB2 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544039B20BDB426005C1EB2 /* Collection.swift */; };
@@ -75,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2542305D20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		2542305F20DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayoutTests.swift; sourceTree = "<group>"; };
 		2544038120BDAD05005C1EB2 /* SwiftyTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544038420BDAD05005C1EB2 /* SwiftyTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyTouch.h; sourceTree = "<group>"; };
 		2544038520BDAD05005C1EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 			children = (
 				2595885320C55C47001ED4D0 /* UIView+Layout.swift */,
 				2595885520C55CDB001ED4D0 /* UIViewController+Layout.swift */,
+				2542305D20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift */,
 				259272EA20C011E8004C8CDD /* Reusable Views */,
 				2595880520C555E8001ED4D0 /* Nib Convertible */,
 				2595881C20C558AC001ED4D0 /* Storyboard Convertible */,
@@ -262,6 +267,7 @@
 			children = (
 				2595885720C573CB001ED4D0 /* UIView+LayoutTests.swift */,
 				2595885920C574B1001ED4D0 /* UIView+Layout DataSet */,
+				2542305F20DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift */,
 				259272F120C012AF004C8CDD /* Reusable Views */,
 				2595882720C55A21001ED4D0 /* Nib Convertible */,
 				2595882820C55A2A001ED4D0 /* Storyboard Convertible */,
@@ -527,6 +533,7 @@
 				2544039F20BDB8F2005C1EB2 /* Weak.swift in Sources */,
 				2592730020C018E5004C8CDD /* ReusableView+Layout.swift in Sources */,
 				2595882420C55966001ED4D0 /* LoadableFromStoryboard.swift in Sources */,
+				2542305E20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift in Sources */,
 				2595881E20C558CF001ED4D0 /* StoryboardError.swift in Sources */,
 				2595882020C558EA001ED4D0 /* StoryboardConvertible.swift in Sources */,
 				2595880720C555FD001ED4D0 /* NibConvertible.swift in Sources */,
@@ -546,6 +553,7 @@
 				2595884720C55B00001ED4D0 /* NibConvertibleOwnerViewController.swift in Sources */,
 				259272F320C012DC004C8CDD /* RegistrationTests.swift in Sources */,
 				2595882A20C55A82001ED4D0 /* NibConvertibleTests.swift in Sources */,
+				2542306020DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift in Sources */,
 				2595885120C55B21001ED4D0 /* StoryboardConvertibleViewControllers.swift in Sources */,
 				2595884A20C55B00001ED4D0 /* NibConvertibleIBNestableViewController.swift in Sources */,
 				259272FC20C0137E004C8CDD /* RegistrationViews.swift in Sources */,
