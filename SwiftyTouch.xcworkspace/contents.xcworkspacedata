@@ -5,7 +5,8 @@
       location = "group:LICENSE">
    </FileRef>
    <FileRef
-      location = "group:SwiftyTouch.podspec">
+      location = "group:SwiftyTouch.podspec"
+      assignedFileDataType = "public.ruby-script">
    </FileRef>
    <FileRef
       location = "group:SwiftyTouch.xcodeproj">
