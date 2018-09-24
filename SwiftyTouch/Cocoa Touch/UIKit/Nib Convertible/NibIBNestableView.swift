@@ -89,7 +89,7 @@ private extension NibIBNestableView {
         } else {
             bounds.size = view.frame.size
         }
-        addSubview(scaledToFill: view)
+        addSubviewConstrained(view)
         nibDidLoad()
     }
     

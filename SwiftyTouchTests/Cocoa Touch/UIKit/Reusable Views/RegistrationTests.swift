@@ -144,7 +144,7 @@ class CollectionViewRegistrationTests: XCTestCase {
     
     func testRegisterSupplementaryViewClass() {
         // Given
-        let viewKind = UICollectionElementKindSectionHeader
+        let viewKind = UICollectionView.elementKindSectionHeader
         collectionView.registerSupplementaryView(CollectionReusableViewClass.self, ofKind: viewKind)
         let indexPath = IndexPath(row: 0, section: 0)
         // When
@@ -192,7 +192,7 @@ class CollectionViewRegistrationTests: XCTestCase {
     
     func testRegisterSupplementaryViewNib() {
         // Given
-        let viewKind = UICollectionElementKindSectionHeader
+        let viewKind = UICollectionView.elementKindSectionHeader
         let nib = UINib(nibName: registrationCollectionViewReusableViewNibName, bundle: swiftyTouchTestsBundle)
         collectionView.registerNib(nib, forSupplementaryViewType: CollectionReusableViewNib.self,
                                    ofKind: viewKind)

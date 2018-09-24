@@ -102,11 +102,11 @@ public extension UICollectionView {
     }
     
     func registerHeaderView(_ headerViewType: UICollectionReusableView.Type) {
-        registerSupplementaryView(headerViewType, ofKind: UICollectionElementKindSectionHeader)
+        registerSupplementaryView(headerViewType, ofKind: UICollectionView.elementKindSectionHeader)
     }
     
     func registerFooterView(_ footerViewType: UICollectionReusableView.Type) {
-        registerSupplementaryView(footerViewType, ofKind: UICollectionElementKindSectionFooter)
+        registerSupplementaryView(footerViewType, ofKind: UICollectionView.elementKindSectionFooter)
     }
     
     func registerNib(_ nib: UINib,
@@ -119,12 +119,12 @@ public extension UICollectionView {
     
     func registerNib(_ nib: UINib,
                      forHeaderViewType headerViewType: UICollectionReusableView.Type) {
-        registerNib(nib, forSupplementaryViewType: headerViewType, ofKind: UICollectionElementKindSectionHeader)
+        registerNib(nib, forSupplementaryViewType: headerViewType, ofKind: UICollectionView.elementKindSectionHeader)
     }
     
     func registerNib(_ nib: UINib,
                      forFooterViewType footerViewType: UICollectionReusableView.Type) {
-        registerNib(nib, forSupplementaryViewType: footerViewType, ofKind: UICollectionElementKindSectionFooter)
+        registerNib(nib, forSupplementaryViewType: footerViewType, ofKind: UICollectionView.elementKindSectionFooter)
     }
     
     func dequeueReusableCell<Cell>(_ cellType: Cell.Type,
@@ -151,7 +151,7 @@ public extension UICollectionView {
                                                for indexPath: IndexPath)
         -> HeaderView where HeaderView: UICollectionReusableView {
             return dequeueReusableSupplementaryView(headerViewType,
-                                                    ofKind: UICollectionElementKindSectionHeader,
+                                                    ofKind: UICollectionView.elementKindSectionHeader,
                                                     withCustomReuseIdentifier: identifier,
                                                     for: indexPath)
     }
@@ -161,7 +161,7 @@ public extension UICollectionView {
                                                for indexPath: IndexPath)
         -> FooterView where FooterView: UICollectionReusableView {
             return dequeueReusableSupplementaryView(footerViewType,
-                                                    ofKind: UICollectionElementKindSectionFooter,
+                                                    ofKind: UICollectionView.elementKindSectionFooter,
                                                     withCustomReuseIdentifier: identifier,
                                                     for: indexPath)
     }

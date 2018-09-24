@@ -48,7 +48,7 @@ public extension NibOwnerView where Self: UIView {
         } else {
             bounds.size = view.frame.size
         }
-        addSubview(scaledToFill: view)
+        addSubviewConstrained(view)
         nibDidLoad()
     }
     

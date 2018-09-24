@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252806B72159146800CFAAD2 /* UIViewLayoutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252806B62159146800CFAAD2 /* UIViewLayoutStoryboard.storyboard */; };
 		2542305E20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542305D20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift */; };
 		2542306020DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542305F20DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift */; };
 		2544038B20BDAD05005C1EB2 /* SwiftyTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544038120BDAD05005C1EB2 /* SwiftyTouch.framework */; };
@@ -62,7 +63,6 @@
 		2595885420C55C47001ED4D0 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885320C55C47001ED4D0 /* UIView+Layout.swift */; };
 		2595885620C55CDB001ED4D0 /* UIViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885520C55CDB001ED4D0 /* UIViewController+Layout.swift */; };
 		2595885820C573CB001ED4D0 /* UIView+LayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885720C573CB001ED4D0 /* UIView+LayoutTests.swift */; };
-		2595885B20C574DC001ED4D0 /* UIViewLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595885A20C574DC001ED4D0 /* UIViewLayoutView.xib */; };
 		2595885D20C5775D001ED4D0 /* UIViewLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595885C20C5775D001ED4D0 /* UIViewLayoutViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252806B62159146800CFAAD2 /* UIViewLayoutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIViewLayoutStoryboard.storyboard; sourceTree = "<group>"; };
 		2542305D20DBD2D800FACB54 /* UICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		2542305F20DBD5E200FACB54 /* UICollectionViewFlowLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayoutTests.swift; sourceTree = "<group>"; };
 		2544038120BDAD05005C1EB2 /* SwiftyTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +136,6 @@
 		2595885320C55C47001ED4D0 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		2595885520C55CDB001ED4D0 /* UIViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
 		2595885720C573CB001ED4D0 /* UIView+LayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutTests.swift"; sourceTree = "<group>"; };
-		2595885A20C574DC001ED4D0 /* UIViewLayoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIViewLayoutView.xib; sourceTree = "<group>"; };
 		2595885C20C5775D001ED4D0 /* UIViewLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLayoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -387,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				2595885C20C5775D001ED4D0 /* UIViewLayoutViewController.swift */,
-				2595885A20C574DC001ED4D0 /* UIViewLayoutView.xib */,
+				252806B62159146800CFAAD2 /* UIViewLayoutStoryboard.storyboard */,
 			);
 			path = "UIView+Layout DataSet";
 			sourceTree = "<group>";
@@ -454,10 +454,11 @@
 				TargetAttributes = {
 					2544038020BDAD05005C1EB2 = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1000;
 					};
 					2544038920BDAD05005C1EB2 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -499,10 +500,10 @@
 				259272FA20C0137E004C8CDD /* RegistrationTableViewHeaderFooterView.xib in Resources */,
 				2595884320C55B00001ED4D0 /* NibConvertibleViewsStoryboard.storyboard in Resources */,
 				2595885020C55B21001ED4D0 /* StoryboardConvertibleStoryboard.storyboard in Resources */,
+				252806B72159146800CFAAD2 /* UIViewLayoutStoryboard.storyboard in Resources */,
 				259272FB20C0137E004C8CDD /* RegistrationCollectionViewReusableView.xib in Resources */,
 				2595883E20C55B00001ED4D0 /* NibConvertibleViewControllersStoryboard.storyboard in Resources */,
 				2595883F20C55B00001ED4D0 /* NibConvertibleIBNestableView.xib in Resources */,
-				2595885B20C574DC001ED4D0 /* UIViewLayoutView.xib in Resources */,
 				2595884020C55B00001ED4D0 /* NibConvertibleCustomViews.xib in Resources */,
 				259272FE20C0137E004C8CDD /* RegistrationCollectionViewCell.xib in Resources */,
 				2595884920C55B00001ED4D0 /* NibConvertibleOwnerView.xib in Resources */,
@@ -718,7 +719,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.1;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -743,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.lepandaroux.SwiftyTouch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.1;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -761,7 +762,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.lepandaroux.SwiftyTouchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -779,7 +780,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.lepandaroux.SwiftyTouchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

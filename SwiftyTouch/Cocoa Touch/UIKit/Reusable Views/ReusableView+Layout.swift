@@ -56,7 +56,7 @@ public extension ReusableViewComputationCompatible where Self: UICollectionViewC
                      withConfiguration configuration: (Self) -> Void) -> CGSize {
         let size = preparedCell(withConfiguration: configuration).contentView
             .systemLayoutSizeFitting(CGSize(width: width,
-                                            height: UILayoutFittingCompressedSize.height),
+                                            height: UIView.layoutFittingCompressedSize.height),
                                      withHorizontalFittingPriority: UILayoutPriority.required,
                                      verticalFittingPriority: UILayoutPriority.fittingSizeLevel)
         return CGSize(width: floor(size.width), height: floor(size.height))
@@ -65,7 +65,7 @@ public extension ReusableViewComputationCompatible where Self: UICollectionViewC
     static func size(forHeight height: CGFloat,
                      withConfiguration configuration: (Self) -> Void) -> CGSize {
         let size = preparedCell(withConfiguration: configuration).contentView
-            .systemLayoutSizeFitting(CGSize(width: UILayoutFittingCompressedSize.width,
+            .systemLayoutSizeFitting(CGSize(width: UIView.layoutFittingCompressedSize.width,
                                             height: height),
                                      withHorizontalFittingPriority: UILayoutPriority.fittingSizeLevel,
                                      verticalFittingPriority: UILayoutPriority.required)

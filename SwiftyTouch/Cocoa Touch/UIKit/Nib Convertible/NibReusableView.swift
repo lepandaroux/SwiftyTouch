@@ -33,7 +33,7 @@ open class NibTableViewCell<V>: UITableViewCell, SuperviewLoadableFromNib where 
     public private(set) var nibView: V?
     public private(set) var nibViewError: Error?
     
-    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
     }
@@ -188,7 +188,7 @@ private extension SuperviewLoadableFromNib where Self: UIView {
                addNibViewIn superview: UIView? = nil) throws {
         let superview = superview ?? self
         let view = try NibView.fromNib(frame: superview.bounds)
-        superview.addSubview(scaledToFill: view)
+        superview.addSubviewConstrained(view)
         self[keyPath: nibViewKeyPath] = view
         nibDidLoad()
     }

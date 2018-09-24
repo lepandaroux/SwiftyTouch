@@ -11,11 +11,11 @@ import XCTest
 
 class UIViewLayoutTests: XCTestCase {
     
-    var viewController: UIViewController!
+    var viewController: UIViewLayoutViewController!
     
     override func setUp() {
         super.setUp()
-        viewController = UIViewLayoutViewController()
+        viewController = UIViewLayoutViewController.shared
     }
     
     override func tearDown() {
@@ -23,15 +23,14 @@ class UIViewLayoutTests: XCTestCase {
         super.tearDown()
     }
     
-    // https://blog.smartnsoft.com/layout-guide-margins-insets-and-safe-area-demystified-on-ios-10-11-d6e7246d7cb8
-    
     @available(iOS 11.0, *)
-    func testSafeArea() {
+    
+    func testAddSubviewSafeArea() {
 //        // Given
 //        viewController.additionalSafeAreaInsets = UIEdgeInsets(top: 64, left: 16, bottom: 49, right: 32)
 //        let subview = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 50, height: 50)))
 //        // When
-//        viewController.view.addSubview(scaledToFill: subview)
+//        viewController.view.addSubviewConstrained(subview, relativeTo: .safeArea)
 //        viewController.view.layoutIfNeeded()
 //        // Then
 //        let test1 = viewController.view.bounds
